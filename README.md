@@ -1,5 +1,12 @@
 # Tetra 1.21.1 / NeoForge 附属移植集（社区版 / Community Edition）
 
+> **许可与再分发提醒（重要）**
+> 本仓库包含 **All Rights Reserved（ARR）** 上游内容的衍生移植，包括但不限于 **VVAddon**
+> 与 **Tetra（第三方 tetra 1.21.1）**。相关内容**仅作学习与参考**，
+> **不得再分发、不得用于商业用途**，由其构建的 jar 同样不得公开分发。
+> 其余未确认许可证的附属默认同样按 ARR 处理。详见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+
+
 本仓库是 **非官方社区版（Community Edition）**，收录将 1.20.1（Forge）Tetra 附属移植到
 **Minecraft 1.21.1 / NeoForge** 的源码与文档。**不包含**任何第三方 mod 的二进制 jar
 （tetra、mutil、KubeJS、暮色森林等），也不包含构建产物。
