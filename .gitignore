@@ -9,7 +9,7 @@ logs/
 libs/
 local-maven/
 *.jar
-!gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.jar
 
 # IDE
 .idea/
