@@ -1,0 +1,12 @@
+{
+  "keymapping.tetra_view.view": "Open Item View Screen",
+  "keymapping.tetra_view.store": "setItemAsComparisonItem",
+  "tetra_view.tooltip": "§8└§7Press %s to compare with %s",
+  "tetra_view.same": "§8└§7Other items will be compared to this item",
+  "tetra_view.store": "§8└§7Press %s to set this as the comparison item",
+  "tetra_view.copy": "Copy",
+  "tetra_view.copy.tooltip": "Generate a \"share code\" (*command to place a shulker box with this item)",
+  "tetra_view.give": "Give",
+  "tetra_view.give.tooltip": "Get an item instance from the \"share code\" in the clipboard (requires cheat permission)",
+  "tetra_view.failed": "clipboardFormatError"
+}

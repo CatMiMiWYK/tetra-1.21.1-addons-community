@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.tetrajs.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemAspectMixin",
+    "ItemEffectMixin"
+  ],
+  "client": [
+    "ThrownModularItemRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

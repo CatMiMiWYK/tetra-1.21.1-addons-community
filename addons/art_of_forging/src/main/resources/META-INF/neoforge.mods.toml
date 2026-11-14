@@ -1,0 +1,49 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="MIT"
+
+[[mods]]
+modId="art_of_forging"
+version="${version}"
+displayName="Art Of Forging"
+authors="Acetheeldritchking, MindFaer"
+description='''Art Of Forging, a mod addon for Tetra:
+Adds many new and unique modules, from rapiers to maces and even pop-culture weapons.'''
+
+[[mixins]]
+config="art_of_forging.mixins.json"
+
+[[dependencies.art_of_forging]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.238,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.art_of_forging]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.art_of_forging]]
+modId="tetra"
+type="required"
+versionRange="[7.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.art_of_forging]]
+modId="mutil"
+type="required"
+versionRange="[7.0.0,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.art_of_forging]]
+modId="soul_fire_d"
+type="required"
+versionRange="[6.1.0,)"
+ordering="AFTER"
+side="BOTH"

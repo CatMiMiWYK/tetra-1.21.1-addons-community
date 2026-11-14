@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.tetra_addition.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ConfigSchematicMixin",
+    "WorkbenchTileMixin",
+    "SchematicRegistryMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

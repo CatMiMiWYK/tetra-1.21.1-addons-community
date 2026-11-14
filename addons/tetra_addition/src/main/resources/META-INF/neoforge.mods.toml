@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "GPL-3.0-or-later"
+
+[[mods]]
+modId = "tetra_addition"
+version = "${version}"
+displayName = "TetraAddition"
+authors = "_yi_ran_"
+description = '''
+A tetra addition that exposes Tetra utilities to KubeJS.
+'''
+
+[[mixins]]
+config="tetra_addition.mixins.json"
+
+[[dependencies.tetra_addition]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_addition]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_addition]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_addition]]
+modId = "kubejs"
+type = "optional"
+versionRange = "[2101.7.0,)"
+ordering = "AFTER"
+side = "BOTH"

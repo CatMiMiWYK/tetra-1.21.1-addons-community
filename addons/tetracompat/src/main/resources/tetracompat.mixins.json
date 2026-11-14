@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.sswltzz.tetracompat.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "RecipeManagerAccessor",
+    "RecipeManagerMixin",
+    "alexscaves.GalenaGauntletItemMixin",
+    "tetra.ToolActionHelperMixin"
+  ],
+  "client": [],
+  "injectors": {
+  }
+}

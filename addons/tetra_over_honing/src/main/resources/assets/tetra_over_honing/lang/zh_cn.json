@@ -1,0 +1,5 @@
+{
+  "tetra.hone.overHoning":"过量打磨: %s -> %2$s (%3$s%%)",
+  "tetra.stats.over_honing:conversion": "高效转换",
+  "tetra.stats.over_honing:conversion.tooltip": "过量打磨的转换率增加 §e%s§r%%"
+}

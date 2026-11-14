@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetra_inherit_enchant"
+version = "${version}"
+displayName = "TetraInherit Enchant"
+authors = "_yi_ran_"
+description = '''
+I like this.
+'''
+logoFile = "icon.png"
+
+[[mixins]]
+config = "tetra_inherit_enchant.mixins.json"
+
+[[dependencies.tetra_inherit_enchant]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_inherit_enchant]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_inherit_enchant]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_inherit_enchant]]
+modId = "tetra_modify_core"
+type = "required"
+versionRange = "[6.9.0,)"
+ordering = "NONE"
+side = "BOTH"

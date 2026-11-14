@@ -1,0 +1,26 @@
+{
+    "replace": true,
+    "slots": [
+        "chest/left"
+    ],
+    "materialSlotCount": 1,
+    "displayType": "major",
+    "glyph": {
+        "textureLocation": "geotetraarmor:textures/gui/gui_gta.png",
+        "textureX": 0,
+        "textureY": 0
+    },
+    "outcomes": [
+        {
+            "materials": [
+                "tetra:wood/",
+                "tetra:gem/",
+                "tetra:metal/",
+                "tetra:bone/"
+            ],
+            "countFactor": 2,
+            "moduleKey": "armor/chest/left/heavy",
+            "moduleVariant": "heavy_chest_left/"
+        }
+    ]
+}

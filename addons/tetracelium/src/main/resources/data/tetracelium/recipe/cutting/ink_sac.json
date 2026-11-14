@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"item":"minecraft:ink_sac"}],"result":[{"item":{"id":"minecraft:black_dye","count":2}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

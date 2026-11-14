@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"item":"farmersdelight:wild_rice"}],"result":[{"item":{"id":"farmersdelight:rice"}},{"chance":0.5,"item":{"id":"farmersdelight:straw"}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

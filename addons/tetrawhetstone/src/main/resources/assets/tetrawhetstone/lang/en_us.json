@@ -1,0 +1,20 @@
+{
+  "item.tetrawhetstone.whetstone": "Whetstone",
+  "item.tetrawhetstone.overwhetstone": "Overloaded Whetstone",
+
+  "tetra/schematic/shared/whetstone.slot1": "Hone",
+  "tetra/schematic/shared/whetstone.description": "Sets honing progress to 100%",
+  "tetra/schematic/shared/whetstone.name": "Hone",
+
+  "tetra/schematic/shared/hpsettled.slot1": "Settle",
+  "tetra/schematic/shared/hpsettled.description": "Consumes 3 Whetstones to add 1 level of Settled to the modification slot (Max Level 1)",
+  "tetra/schematic/shared/hpsettled.name": "Settle",
+
+  "tetra/schematic/shared/overwhetstone.slot1": "Hone II",
+  "tetra/schematic/shared/overwhetstone.description": "Sets honing progress to 100%, resets to 100% after each hone for 9 uses",
+  "tetra/schematic/shared/overwhetstone.name": "Hone II",
+
+  "tetra/schematic/shared/overhpsettled.slot1": "Settle II",
+  "tetra/schematic/shared/overhpsettled.description": "Consumes 2 Overloaded Whetstones to add 2 levels of Settled to the modification slot",
+  "tetra/schematic/shared/overhpsettled.name": "Settle II"
+}

@@ -1,0 +1,57 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+version = "${minecraft_version}-${mod_version}"
+group = mod_group_id
+
+base {
+    archivesName = "${mod_id}-1.21"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenLocal()
+    maven { url = "https://maven.parchmentmc.org/" }
+}
+
+configurations.matching { it.name == 'neoFormRuntimeExternalTools' }.configureEach {
+    transitive = false
+}
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+dependencies {
+    implementation files(
+            "libs/tetra-1.21.1-7.0.0.jar",
+            "libs/mutil-1.21.1-7.0.0.jar",
+            "libs/geckolib-neoforge-1.21.1-4.9.3.jar"
+    )
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'loader_version_range', project.loader_version_range
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand version: project.version, loader_version_range: project.loader_version_range
+    }
+}

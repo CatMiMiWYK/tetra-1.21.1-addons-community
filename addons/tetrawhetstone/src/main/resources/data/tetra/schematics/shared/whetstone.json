@@ -1,0 +1,39 @@
+{
+    "replace": false,
+    "hidden": true,
+    "slots": [
+        "double/handle",
+        "double/head_left",
+        "double/head_right",
+        "single/handle",
+        "single/head",
+        "sword/blade",
+        "sword/hilt",
+        "bow/stave",
+        "bow/string",
+        "shield/plate",
+        "shield/grip",
+        "crossbow/stave",
+        "crossbow/stock"
+    ],
+    "materialSlotCount": 1,
+    "materialRevealSlot": 0,
+    "rarity": "temporary",
+    "displayType": "improvement",
+    "glyph": {
+        "textureX": 32,
+        "textureY": 240
+    },
+    "outcomes": [
+        {
+            "material": {
+                "items": [
+                    "tetrawhetstone:whetstone"
+                ]
+            },
+            "improvements": {
+              "whetstone": 0
+            }
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "APGL 3.0"
+
+[[mods]]
+modId = "fluxoftetra"
+version = "${version}"
+displayName = "FluxOfTetra"
+logoFile = "icon.png"
+authors = "_yi_ran_"
+description = '''
+I like this.
+'''
+
+[[dependencies.fluxoftetra]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fluxoftetra]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fluxoftetra]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fluxoftetra]]
+modId = "mutil"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,20 @@
+{
+  "item.tetrawhetstone.whetstone": "磨刀石",
+  "item.tetrawhetstone.overwhetstone": "超载磨刀石",
+
+  "tetra/schematic/shared/whetstone.slot1": "磨刀",
+  "tetra/schematic/shared/whetstone.description": "使打磨进度变为百分之百",
+  "tetra/schematic/shared/whetstone.name": "磨刀",
+
+  "tetra/schematic/shared/hpsettled.slot1": "稳固",
+  "tetra/schematic/shared/hpsettled.description": "消耗三个磨刀石，在改造的槽位增加一级稳固，最高一级",
+  "tetra/schematic/shared/hpsettled.name": "稳固",
+
+  "tetra/schematic/shared/overwhetstone.slot1": "磨刀II",
+  "tetra/schematic/shared/overwhetstone.description": "使打磨进度变为百分之百，并且每次打磨后再次使打磨进度变为百分之百，持续九次",
+  "tetra/schematic/shared/overwhetstone.name": "磨刀II",
+
+  "tetra/schematic/shared/overhpsettled.slot1": "稳固II",
+  "tetra/schematic/shared/overhpsettled.description": "消耗两个超载磨刀石磨刀石，在改造的槽位增加二级稳固",
+  "tetra/schematic/shared/overhpsettled.name": "稳固II"
+}

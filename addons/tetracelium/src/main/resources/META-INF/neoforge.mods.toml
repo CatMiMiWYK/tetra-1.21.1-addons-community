@@ -1,0 +1,52 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "ARR"
+
+[[mods]]
+modId = "tetracelium"
+version = "${version}"
+displayName = "tetracelium"
+authors = "Mickelus"
+description = '''Makes tetra compatible with materials and items from other mods'''
+credits = '''The twilight forest team'''
+
+[[mixins]]
+config = "tetracelium.mixins.json"
+
+[[accessTransformers]]
+file = "META-INF/accesstransformer.cfg"
+
+[[dependencies.tetracelium]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracelium]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracelium]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.tetracelium]]
+modId = "farmersdelight"
+type = "optional"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracelium]]
+modId = "soul_fire_d"
+type = "optional"
+versionRange = "[1.21-6.0.0,)"
+ordering = "NONE"
+side = "BOTH"

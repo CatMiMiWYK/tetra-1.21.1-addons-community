@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"item":"minecraft:cooked_chicken"}],"result":[{"item":{"id":"farmersdelight:cooked_chicken_cuts","count":2}},{"item":{"id":"minecraft:bone_meal"}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

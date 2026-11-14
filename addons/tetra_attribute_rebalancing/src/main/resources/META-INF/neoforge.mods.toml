@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetra_attribute_rebalancing"
+version = "${version}"
+displayName = "Tetra Attribute Rebalancing"
+authors = "Yiran"
+description = '''
+Rebalances Tetra attribute collapsing and rounding.
+'''
+
+[[mixins]]
+config="tetra_attribute_rebalancing.mixins.json"
+
+[[dependencies.tetra_attribute_rebalancing]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_attribute_rebalancing]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_attribute_rebalancing]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

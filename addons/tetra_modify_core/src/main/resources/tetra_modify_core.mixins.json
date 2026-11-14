@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.tetra.modify.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "plugin": "net.tetra.modify.core.mixins.MixinConfigPlugin",
+  "mixins": [
+    "IModularItemMixin",
+    "LivingEntityAccessor",
+    "LivingEntityMixin",
+    "PlayerMixin",
+    "data.LockedRequirementMixin",
+    "data.MaterialImprovementDataMixin",
+    "data.MaterialVariantDataMixin",
+    "data.VariantDataMixin",
+    "gui.element.GuiElementMixin",
+    "modular.ModularBowItemMixin",
+    "modular.ModularCrossbowItemMixin"
+  ],
+  "client": [
+    "GuiStatBarMixin",
+    "client.ForgeHooksClientMixin",
+    "client.HoloCraftRootGuiMixin",
+    "client.HoloItemsGuiMixin",
+    "gui.WorkbenchScreenMixin",
+    "toolbelt.ToolbeltScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

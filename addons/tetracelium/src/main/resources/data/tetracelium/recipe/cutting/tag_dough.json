@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"tag":"c:foods/dough"}],"result":[{"item":{"id":"farmersdelight:raw_pasta"}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

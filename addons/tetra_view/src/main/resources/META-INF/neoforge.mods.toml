@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "LGPL 3.0"
+
+[[mods]]
+modId = "tetra_view"
+version = "${version}"
+displayName = "Tetra View"
+logoFile = "icon.png"
+authors = "_yi_ran_"
+description = '''
+I like this.
+'''
+
+[[dependencies.tetra_view]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_view]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_view]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

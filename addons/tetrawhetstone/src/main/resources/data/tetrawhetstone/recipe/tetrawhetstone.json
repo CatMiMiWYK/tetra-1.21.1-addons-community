@@ -1,0 +1,26 @@
+{
+	"type": "crafting_shaped",
+	"pattern": [
+	    "ddd",
+        "bab",
+        "ccc"
+	],
+	"key": {
+		"a": {
+			"item": "minecraft:netherite_ingot"
+		},
+		"b": {
+			"item": "minecraft:crying_obsidian"
+		},
+		"c": {
+			"item": "minecraft:clay_ball"
+		},
+		"d": {
+			"item": "minecraft:diamond"
+		}
+	},
+	"result": {
+		"id": "tetrawhetstone:overwhetstone",
+		"count": 2
+	}
+}

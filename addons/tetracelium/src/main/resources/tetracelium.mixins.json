@@ -1,0 +1,10 @@
+{
+  "required": true,
+  "package": "se.mickelus.tetracelium.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CuttingBoardBlockEntityMixin"
+  ],
+  "client": [],
+  "minVersion": "0.8"
+}

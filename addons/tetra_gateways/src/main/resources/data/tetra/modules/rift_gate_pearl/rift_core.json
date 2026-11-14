@@ -1,0 +1,104 @@
+{
+  "replace": true,
+  "type": "tetra:basic_major_module",
+  "slots": [
+    "rift_core"
+  ],
+  "improvements": [
+    "tetra:rift_gate_pearl/rift_core/"
+  ],
+  "variants": [
+    {
+      "key": "rift_core/basic",
+      "integrity": 0,
+      "effects": {
+        "rift_info": 1,
+        "rift_wave_count": 3,
+        "rift_mob_spawn": [
+          5,
+          2
+        ],
+        "rift_pool_a": 1,
+        "rift_attributes": 1,
+        "rift_mob_base_health": 20,
+        "rift_attributes_minecraft_generic_max_health": [
+          10,
+          0.5
+        ]
+      },
+      "glyph": {
+        "textureX": 96,
+        "textureY": 48
+      }
+    },
+    {
+      "key": "rift_core/dual",
+      "integrity": 0,
+      "glyph": {
+        "textureX": 112,
+        "textureY": 48
+      },
+      "effects": {
+        "rift_info": 1,
+        "rift_wave_count": 3,
+        "rift_mob_spawn": [
+          5,
+          2
+        ],
+        "rift_pool_a": 1,
+        "rift_attributes": 1,
+        "rift_mob_base_health": 20,
+        "rift_attributes_minecraft_generic_max_health": [
+          10,
+          0.5
+        ]
+      }
+    },
+    {
+      "key": "rift_core/triple",
+      "integrity": 0,
+      "glyph": {
+        "textureX": 128,
+        "textureY": 48
+      },
+      "effects": {
+        "rift_info": 1,
+        "rift_wave_count": 3,
+        "rift_mob_spawn": [
+          5,
+          2
+        ],
+        "rift_pool_a": 1,
+        "rift_attributes": 1,
+        "rift_mob_base_health": 20,
+        "rift_attributes_minecraft_generic_max_health": [
+          10,
+          0.5
+        ]
+      }
+    },
+    {
+      "key": "rift_core/local_spawn",
+      "integrity": 0,
+      "effects": {
+        "rift_info": 1,
+        "rift_wave_count": 3,
+        "rift_mob_spawn": [
+          5,
+          2
+        ],
+        "rift_pool_a": 1,
+        "rift_attributes": 1,
+        "rift_mob_base_health": 20,
+        "rift_attributes_minecraft_generic_max_health": [
+          10,
+          0.5
+        ]
+      },
+      "glyph": {
+        "textureX": 144,
+        "textureY": 48
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hp.tetra_data_kubejs.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AbstractUpdateDataPacketMixin",
+    "DataStoreAccessor",
+    "DataStoreDiagnosticsMixin",
+    "MaterialImprovementDataMixin",
+    "MergingDataStoreDiagnosticsMixin",
+    "ModularItemMixin",
+    "ReloadableServerResourcesMixin",
+    "SchematicRegistryMixin",
+    "VariantDataMixin"
+  ],
+  "client": [
+    "client.I18nMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

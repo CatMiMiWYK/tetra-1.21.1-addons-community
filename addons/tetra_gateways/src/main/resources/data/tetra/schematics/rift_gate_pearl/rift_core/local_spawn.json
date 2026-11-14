@@ -1,0 +1,18 @@
+{
+  "replace": true,
+  "slots": [
+    "rift_core"
+  ],
+  "materialSlotCount": 0,
+  "displayType": "major",
+  "glyph": {
+    "textureX": 144,
+    "textureY": 48
+  },
+  "outcomes": [
+    {
+      "moduleKey": "rift_gate_pearl/rift_core",
+      "moduleVariant": "rift_core/local_spawn"
+    }
+  ]
+}

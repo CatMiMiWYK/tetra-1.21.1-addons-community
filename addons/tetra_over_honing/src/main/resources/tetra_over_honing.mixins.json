@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.toh.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "IModularItemWrapperMixin",
+    "WorkbenchTileMixin"
+  ],
+  "client": [
+    "IModularItemWrapperMixin$Client"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

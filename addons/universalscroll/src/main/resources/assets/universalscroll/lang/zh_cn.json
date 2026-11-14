@@ -1,0 +1,30 @@
+{
+  "itemGroup.universalscroll": "白白的百宝袋",
+
+  "block.universalscroll.omni_scroll": "百宝卷轴",
+  "item.universalscroll.omni_scroll.description": "汇总了所有卷轴的图纸与合成效果。",
+  "item.universalscroll.omni_scroll.usage": "放在工作台附近即可直接使用全部图纸，无需事先收集卷轴。",
+
+  "item.universalscroll.universal_scroll": "万能的卷轴",
+  "item.universalscroll.universal_scroll.description": "记载着所有图纸的卷轴。",
+  "item.universalscroll.universal_scroll.usage": "对着工作台使用可选择并进入图纸；空手右键可浏览全部图纸。",
+  "item.universalscroll.universal_scroll.last_selected": "上次选择：%s",
+
+  "gui.universalscroll.title": "选择图纸",
+  "gui.universalscroll.title_count": "选择图纸（%s）",
+  "gui.universalscroll.search": "搜索图纸",
+  "gui.universalscroll.search_hint": "搜索名称 / 键 / 来源",
+  "gui.universalscroll.hint": "滚轮翻页 · 点击图纸进入工作台 · ESC 关闭",
+  "gui.universalscroll.need_workbench": "请对着工作台使用万能的卷轴，才能进入对应图纸。",
+
+  "message.universalscroll.need_workbench": "请对着工作台使用万能的卷轴。",
+  "message.universalscroll.too_far": "工作台太远了。",
+  "message.universalscroll.no_workbench": "目标不是有效的工作台。",
+  "message.universalscroll.not_holding": "请手持万能的卷轴。",
+  "message.universalscroll.unknown_schematic": "图纸不存在或尚未加载。",
+  "message.universalscroll.no_target": "请先在工作台放入要改造的物品。",
+  "message.universalscroll.no_slot": "该图纸不适用于工作台中的物品。",
+  "message.universalscroll.requirements": "该图纸的额外条件尚未满足。",
+  "message.universalscroll.open_failed": "无法打开工作台界面。",
+  "message.universalscroll.opened": "已打开图纸：%s"
+}

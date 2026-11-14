@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "universalscroll"
+version = "${version}"
+displayName = "白白的百宝袋"
+authors = "Yiran"
+logoFile = "universalscroll.png"
+description = '''
+白白的百宝袋：一只来自未来的白色小口袋，里面装着 Tetra 的全部图纸。
+其中那张“万能的卷轴”可以代替任何卷轴，带你直达任意一张已加载的图纸。
+'''
+
+[[dependencies.universalscroll]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.universalscroll]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.universalscroll]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

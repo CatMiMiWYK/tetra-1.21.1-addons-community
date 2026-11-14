@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.rebalancing.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AttributeHelperMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "LGPL 3.0"
+
+[[mods]]
+modId = "morerequirement"
+version = "${version}"
+displayName = "MoreRequirement"
+authors = "_yi_ran_"
+description = '''
+I like this.
+'''
+
+[[mixins]]
+config = "morerequirement.mixins.json"
+
+[[dependencies.morerequirement]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.morerequirement]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.morerequirement]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.morerequirement]]
+modId = "mutil"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

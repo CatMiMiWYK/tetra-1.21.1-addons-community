@@ -1,0 +1,33 @@
+{
+  "textures": {
+    "particle": "universalscroll:block/omni_scroll",
+    "paper": "universalscroll:block/omni_scroll",
+    "band": "universalscroll:block/omni_scroll_band"
+  },
+  "elements": [
+    {
+      "from": [2, 0, 5],
+      "to": [14, 3, 11],
+      "faces": {
+        "down": { "texture": "#paper" },
+        "up": { "texture": "#paper" },
+        "north": { "texture": "#paper" },
+        "south": { "texture": "#paper" },
+        "west": { "texture": "#paper" },
+        "east": { "texture": "#paper" }
+      }
+    },
+    {
+      "from": [7, 0.01, 4.8],
+      "to": [9, 3.2, 11.2],
+      "faces": {
+        "down": { "texture": "#band" },
+        "up": { "texture": "#band" },
+        "north": { "texture": "#band" },
+        "south": { "texture": "#band" },
+        "west": { "texture": "#band" },
+        "east": { "texture": "#band" }
+      }
+    }
+  ]
+}

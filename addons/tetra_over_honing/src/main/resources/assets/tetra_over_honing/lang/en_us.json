@@ -1,0 +1,5 @@
+{
+  "tetra.hone.overHoning":"OverHoning: %s -> %2$s (%3$s%%)",
+  "tetra.stats.over_honing:conversion": "EfficientConversion",
+  "tetra.stats.over_honing:conversion.tooltip": "OverHoning conversion rate increased by §e%s§r%%"
+}

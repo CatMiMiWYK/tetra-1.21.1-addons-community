@@ -1,0 +1,30 @@
+{
+  "itemGroup.universalscroll": "Whitey's Bag of Everything",
+
+  "block.universalscroll.omni_scroll": "Treasure Scroll",
+  "item.universalscroll.omni_scroll.description": "Gathers every scroll's schematics and crafting effects in one place.",
+  "item.universalscroll.omni_scroll.usage": "Place it near a workbench to use all schematics without collecting scrolls first.",
+
+  "item.universalscroll.universal_scroll": "All-Purpose Scroll",
+  "item.universalscroll.universal_scroll.description": "A scroll that records every known schematic.",
+  "item.universalscroll.universal_scroll.usage": "Use on a workbench to pick a schematic; right-click in air to browse.",
+  "item.universalscroll.universal_scroll.last_selected": "Last selected: %s",
+
+  "gui.universalscroll.title": "Select Schematic",
+  "gui.universalscroll.title_count": "Select Schematic (%s)",
+  "gui.universalscroll.search": "Search schematics",
+  "gui.universalscroll.search_hint": "Search name / key / source",
+  "gui.universalscroll.hint": "Scroll to page · click to open at workbench · ESC to close",
+  "gui.universalscroll.need_workbench": "Use the All-Purpose Scroll on a workbench to open a schematic.",
+
+  "message.universalscroll.need_workbench": "Use the All-Purpose Scroll on a workbench.",
+  "message.universalscroll.too_far": "That workbench is too far away.",
+  "message.universalscroll.no_workbench": "The target is not a valid workbench.",
+  "message.universalscroll.not_holding": "Hold the All-Purpose Scroll first.",
+  "message.universalscroll.unknown_schematic": "That schematic does not exist or is not loaded.",
+  "message.universalscroll.no_target": "Place the item you want to modify in the workbench first.",
+  "message.universalscroll.no_slot": "That schematic does not apply to the item in the workbench.",
+  "message.universalscroll.requirements": "The extra requirements for that schematic are not met.",
+  "message.universalscroll.open_failed": "Could not open the workbench screen.",
+  "message.universalscroll.opened": "Opened schematic: %s"
+}

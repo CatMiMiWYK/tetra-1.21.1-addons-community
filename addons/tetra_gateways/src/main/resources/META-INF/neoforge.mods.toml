@@ -1,0 +1,54 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetra_gateways"
+version = "${version}"
+displayName = "Tetra Gateways"
+authors = "hp"
+
+[[mixins]]
+config = "tetra_gateways.mixins.json"
+
+[[dependencies.tetra_gateways]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_gateways]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_gateways]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_gateways]]
+modId = "tetrajs"
+type = "required"
+versionRange = "[2001,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_gateways]]
+modId = "gateways"
+type = "required"
+versionRange = "[5.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_gateways]]
+modId = "placebo"
+type = "required"
+versionRange = "[9.9.0,)"
+ordering = "NONE"
+side = "BOTH"

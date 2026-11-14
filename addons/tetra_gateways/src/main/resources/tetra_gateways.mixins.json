@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hp.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "GatewayEntityMixin",
+    "NormalGatewayEntityMixin",
+    "WaveMixin",
+    "WorkbenchTileMixin"
+  ],
+  "client": [
+    "NormalGateClientMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

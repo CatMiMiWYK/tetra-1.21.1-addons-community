@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.tmo.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "MaterialDataMixin",
+    "MaterialDataMixin$DeserializerMixin",
+    "MaterialImprovementDataMixin",
+    "MaterialMultiplierMixin",
+    "MaterialVariantDataMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

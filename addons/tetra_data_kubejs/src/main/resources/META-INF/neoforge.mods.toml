@@ -1,0 +1,43 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetra_data_kubejs"
+version = "${version}"
+displayName = "tetra_data_kubejs"
+authors = "hp"
+description = '''
+Tetra data integration for KubeJS server_scripts.
+'''
+
+[[mixins]]
+config = "tetra_data_kubejs.mixins.json"
+
+[[dependencies.tetra_data_kubejs]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_data_kubejs]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_data_kubejs]]
+modId = "kubejs"
+type = "required"
+versionRange = "[2101.7.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.tetra_data_kubejs]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"

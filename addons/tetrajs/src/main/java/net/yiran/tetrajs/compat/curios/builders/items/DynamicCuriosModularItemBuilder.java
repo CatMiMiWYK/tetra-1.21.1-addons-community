@@ -1,0 +1,35 @@
+package net.yiran.tetrajs.compat.curios.builders.items;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.yiran.tetrajs.compat.curios.items.DynamicCuriosModularItem;
+import net.yiran.tetrajs.kubejs.builders.items.AbstractModularItemBuilder;
+
+public class DynamicCuriosModularItemBuilder extends AbstractModularItemBuilder<DynamicCuriosModularItemBuilder> {
+    public boolean providerAttribute = true;
+    public boolean isUnbreakable = false;
+
+    public DynamicCuriosModularItemBuilder(ResourceLocation itemID) {
+        super(itemID);
+    }
+
+    public DynamicCuriosModularItemBuilder tjs$setProviderAttribute(boolean providerAttribute) {
+        this.providerAttribute = providerAttribute;
+        return this;
+    }
+
+    public DynamicCuriosModularItemBuilder tjs$addCuriosSlot(String curiosSlot) {
+        this.tag(new ResourceLocation[]{ResourceLocation.fromNamespaceAndPath("curios", curiosSlot)});
+        return this;
+    }
+
+    public DynamicCuriosModularItemBuilder tjs$isUnbreakable() {
+        this.isUnbreakable = true;
+        return this;
+    }
+
+    @Override
+    public Item createObject() {
+        return new DynamicCuriosModularItem(this.id, this.canHone, this.honeBase, this.honeIntegrityMultiplier, this.synergiesPath, this.providerAttribute, this.isUnbreakable);
+    }
+}

@@ -1,0 +1,57 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetrajs"
+version = "${version}"
+displayName = "TetraJS"
+authors = "Yiran"
+description = '''
+Tetra KubeJS integration.
+'''
+
+[[mixins]]
+config = "tetrajs.mixins.json"
+
+[[dependencies.tetrajs]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrajs]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrajs]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrajs]]
+modId = "kubejs"
+type = "required"
+versionRange = "[2101,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrajs]]
+modId = "tetra_addition"
+type = "required"
+versionRange = "[6.9.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrajs]]
+modId = "curios"
+type = "optional"
+versionRange = "[9.0.0,)"
+ordering = "NONE"
+side = "BOTH"

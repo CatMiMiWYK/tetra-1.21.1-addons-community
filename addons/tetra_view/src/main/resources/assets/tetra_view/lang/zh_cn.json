@@ -1,0 +1,12 @@
+{
+  "keymapping.tetra_view.view": "打开属性预览界面",
+  "keymapping.tetra_view.store": "将物品设置为对比物品",
+  "tetra_view.tooltip": "§8└§7按下§r[%s]§7与%s§7对比",
+  "tetra_view.same": "§8└§7其他物品将与此物品对比",
+  "tetra_view.store": "§8└§7按下§r[%s]§7将其设置为对比物品",
+  "tetra_view.copy": "复制",
+  "tetra_view.copy.tooltip": "生成“分享码”（*放置带有此物品的潜影盒的指令）",
+  "tetra_view.give": "获取",
+  "tetra_view.give.tooltip": "从剪切板中的“分享码”获取一个物品实例（需作弊权限）",
+  "tetra_view.failed": "剪切板格式错误"
+}

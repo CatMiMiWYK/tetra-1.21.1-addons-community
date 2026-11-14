@@ -1,0 +1,21 @@
+{
+  "slots": [
+    "rift_core"
+  ],
+  "materialSlotCount": 1,
+  "displayType": "major",
+  "glyph": {
+    "textureX": 128,
+    "textureY": 48
+  },
+  "outcomes": [
+    {
+      "material": {
+        "tag": "forge:ingots"
+      },
+      "materialSlot": 0,
+      "moduleKey": "rift_gate_pearl/rift_core",
+      "moduleVariant": "rift_core/triple"
+    }
+  ]
+}

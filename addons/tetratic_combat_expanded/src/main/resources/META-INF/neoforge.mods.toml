@@ -1,0 +1,50 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "MIT"
+
+[[mods]]
+modId = "tetratic_combat_expanded"
+version = "${version}"
+displayName = "Tetratic Combat Expanded"
+authors = "Firelight Studios (BluSpring, Kiran), Smartin, Ace"
+description = '''
+Tetra, Tetra:AoF compat with BetterCombat
+'''
+
+[[mixins]]
+config="tetraticcombat.mixins.json"
+
+[[dependencies.tetratic_combat_expanded]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetratic_combat_expanded]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetratic_combat_expanded]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetratic_combat_expanded]]
+modId = "art_of_forging"
+type = "optional"
+versionRange = "[1.5.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetratic_combat_expanded]]
+modId = "bettercombat"
+type = "required"
+versionRange = "[2.0.4,2.1.0)"
+ordering = "NONE"
+side = "BOTH"

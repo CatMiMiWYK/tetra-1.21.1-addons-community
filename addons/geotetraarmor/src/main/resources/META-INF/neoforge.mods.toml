@@ -1,0 +1,50 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "geotetraarmor"
+version = "${version}"
+displayName = "GeoTetraArmor"
+authors = "Yiran"
+description = '''
+Geckolib based tetra armor.
+'''
+
+[[mixins]]
+config = "geotetraarmor.mixins.json"
+
+[[dependencies.geotetraarmor]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.geotetraarmor]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.geotetraarmor]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.geotetraarmor]]
+modId = "tetra_material_overhaul"
+type = "required"
+versionRange = "[6.9.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.geotetraarmor]]
+modId = "geckolib"
+type = "required"
+versionRange = "[4.9.0,)"
+ordering = "NONE"
+side = "BOTH"

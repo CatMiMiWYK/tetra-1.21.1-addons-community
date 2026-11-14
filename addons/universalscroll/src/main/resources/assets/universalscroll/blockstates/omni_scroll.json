@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "universalscroll:block/omni_scroll"
+    }
+  }
+}

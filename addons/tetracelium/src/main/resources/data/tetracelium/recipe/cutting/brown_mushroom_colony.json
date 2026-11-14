@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"item":"farmersdelight:brown_mushroom_colony"}],"result":[{"item":{"id":"minecraft:brown_mushroom","count":5}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

@@ -1,0 +1,47 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetrawhetstone"
+version = "${version}"
+displayName = "tetrawhetstone"
+authors = "hp"
+description = '''
+empty
+'''
+
+[[dependencies.tetrawhetstone]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrawhetstone]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetrawhetstone]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.tetrawhetstone]]
+modId = "mutil"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.tetrawhetstone]]
+modId = "tetra_addition"
+type = "required"
+versionRange = "[1.0,)"
+ordering = "AFTER"
+side = "BOTH"

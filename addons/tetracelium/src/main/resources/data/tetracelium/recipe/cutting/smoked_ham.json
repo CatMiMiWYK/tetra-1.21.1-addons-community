@@ -1,0 +1,1 @@
+{"type":"farmersdelight:cutting","conditions":[{"type":"neoforge:mod_loaded","modid":"farmersdelight"}],"ingredients":[{"item":"farmersdelight:smoked_ham"}],"result":[{"item":{"id":"minecraft:cooked_porkchop","count":2}},{"item":{"id":"minecraft:bone"}}],"tool":[{"type":"farmersdelight:item_ability","action":"knife_dig"}]}

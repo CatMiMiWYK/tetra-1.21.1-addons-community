@@ -1,0 +1,46 @@
+package smartin.tetraticcombat;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.HitResult;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.bus.api.EventPriority;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.entity.player.PlayerInteractEvent;
+import se.mickelus.tetra.effect.EffectHelper;
+import se.mickelus.tetra.effect.ItemEffect;
+import se.mickelus.tetra.effect.SweepingEffect;
+import se.mickelus.tetra.effect.howling.HowlingEffect;
+import se.mickelus.tetra.items.modular.ItemModularHandheld;
+
+@EventBusSubscriber(
+        modid = "tetratic",
+        bus = EventBusSubscriber.Bus.MOD
+)
+public class ClientEventHandler {
+    @OnlyIn(Dist.CLIENT)
+    @SubscribeEvent(priority = EventPriority.LOWEST )
+    public static void onEmptyLeftClick(PlayerInteractEvent.LeftClickEmpty event){
+        if(!ForgeConfigHolder.COMMON.altEvent.get()) return;
+        Minecraft mc = Minecraft.getInstance();
+        assert mc.player != null;
+        ItemStack itemStack = mc.player.getMainHandItem();
+        // 1.21: Event#isCanceled 已移除，仅可取消事件才有该状态（LeftClickEmpty 本身不可取消）
+        if (event instanceof net.neoforged.bus.api.ICancellableEvent cancellableEvent && cancellableEvent.isCanceled()) return;
+        if (itemStack.getItem() instanceof ItemModularHandheld && mc.hitResult != null && HitResult.Type.MISS.equals(mc.hitResult.getType())) {
+            if (getEffectLevel(itemStack, ItemEffect.truesweep) > 0) {
+                SweepingEffect.triggerTruesweep();
+            }
+
+            if (getEffectLevel(itemStack, ItemEffect.howling) > 0) {
+                HowlingEffect.sendPacket();
+            }
+        }
+    }
+
+    private static int getEffectLevel(ItemStack itemStack, ItemEffect effect) {
+        return EffectHelper.getEffectLevel(itemStack, effect);
+    }
+}

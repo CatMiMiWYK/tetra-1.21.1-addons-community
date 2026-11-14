@@ -1,0 +1,57 @@
+package net.yiran.morerequirement.requirements;
+
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
+import net.neoforged.api.distmarker.Dist;
+import net.neoforged.api.distmarker.OnlyIn;
+import net.neoforged.neoforge.common.ItemAbility;
+import se.mickelus.tetra.craftingeffect.condition.CraftingEffectCondition;
+import se.mickelus.tetra.module.schematic.CraftingContext;
+import se.mickelus.tetra.module.schematic.UpgradeSchematic;
+import se.mickelus.tetra.module.schematic.requirement.CraftingRequirement;
+
+import javax.annotation.Nullable;
+import java.util.List;
+import java.util.Map;
+
+public class BiomeRequirement implements CraftingRequirement, CraftingEffectCondition {
+    public ResourceLocation biome;
+
+    @Override
+    public boolean test(ResourceLocation[] unlocks, ItemStack upgradedStack, String slot, boolean isReplacing, Player player,
+            ItemStack[] materials, Map<ItemAbility, Integer> tools, UpgradeSchematic schematic, Level world, BlockPos pos, BlockState blockState) {
+        return matches(world, pos);
+    }
+
+    @Override
+    public boolean test(CraftingContext cxt) {
+        Level level = cxt.world;
+        BlockPos pos = cxt.pos;
+        if (level == null || pos == null) {
+            return false;
+        }
+        return matches(level, pos);
+    }
+
+    private boolean matches(Level level, BlockPos pos) {
+        return level.getBiome(pos)
+                .unwrapKey()
+                .map(ResourceKey::location)
+                .map(this.biome::equals)
+                .orElse(false);
+    }
+
+    @Nullable
+    @Override
+    @OnlyIn(Dist.CLIENT)
+    public List<Component> getDescription() {
+        String key = "biome." + this.biome.getNamespace() + "." + this.biome.getPath();
+        return List.of(Component.translatable("more_requirement.holo.biome_requirement", Component.translatable(key)));
+    }
+}

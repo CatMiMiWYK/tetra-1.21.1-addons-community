@@ -1,0 +1,71 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "MIT"
+
+[[mods]]
+modId = "tetracompat"
+version = "${version}"
+displayName = "Tetra Compat"
+authors = "SSWTLZZ"
+description = '''
+Provide Tetra compatibility for other mods.
+'''
+
+[[mixins]]
+config = "tetracompat.mixins.json"
+
+[[dependencies.tetracompat]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "ftbultimine"
+type = "optional"
+versionRange = "[2101,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "alexscaves"
+type = "optional"
+versionRange = "[2.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "farmersdelight"
+type = "optional"
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "exdeorum"
+type = "optional"
+versionRange = "[3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetracompat]]
+modId = "tetracelium"
+type = "optional"
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "tetra_material_overhaul"
+version = "${version}"
+displayName = "Tetra Material Overhaul"
+authors = "Yiran"
+description = '''
+Context based material attribute/effect overrides for Tetra.
+'''
+
+[[mixins]]
+config="tetra_material_overhaul.mixins.json"
+
+[[dependencies.tetra_material_overhaul]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_material_overhaul]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_material_overhaul]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

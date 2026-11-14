@@ -1,0 +1,60 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.141'
+}
+
+version = "${minecraft_version}-${mod_version}"
+group = mod_group_id
+
+base {
+    archivesName = "${mod_id}-1.21"
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenLocal()
+    maven { url = "https://maven.parchmentmc.org/" }
+}
+
+// 与 tetra 参考工程一致：NFRT 的 external tools 不做传递解析（官方 Maven 不可达）
+configurations.matching { it.name == 'neoFormRuntimeExternalTools' }.configureEach {
+    transitive = false
+}
+
+neoForge {
+    version = project.neo_version
+
+    parchment {
+        mappingsVersion = project.parchment_mappings_version
+        minecraftVersion = project.parchment_minecraft_version
+    }
+
+    mods {
+        "${mod_id}" {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+// 本地构件：tetra 1.21.1 自建产物、mutil 1.21.1 官方、
+// Better Combat 2.0.4（实测唯一仍从物品 NBT 读取 weapon_attributes 的 1.21.1 构建；2.1.0 起只读 WEAPON_PRESET_ID）
+dependencies {
+    implementation files(
+            "libs/tetra-1.21.1-7.0.0.jar",
+            "libs/mutil-1.21.1-7.0.0.jar",
+            "libs/bettercombat-2.0.4-1.21.1-neoforge.jar"
+    )
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    inputs.property 'loader_version_range', project.loader_version_range
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand version: project.version, loader_version_range: project.loader_version_range
+    }
+}

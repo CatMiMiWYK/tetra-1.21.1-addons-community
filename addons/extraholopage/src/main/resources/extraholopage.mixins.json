@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "net.yiran.extraholopage.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "mixins": [
+    "GuiElementMixin",
+    "HoloMaterialDetailGuiMixin",
+    "HoloVariantDetailGuiMixin$MaterialWrapper"
+  ],
+  "client": [
+    "GuiSchematicListMixin",
+    "GuiStatBarMixin",
+    "HoloGuiMixin",
+    "HoloImprovementGuiMixin",
+    "HoloImprovementVariantGuiMixin",
+    "HoloItemGuiMixin",
+    "HoloMaterialApplicableMixin",
+    "HoloMaterialListGuiMixin",
+    "HoloSchematicGuiMixin",
+    "HoloVariantItemGuiMixin",
+    "HoloVariantListGuiMixin",
+    "StatBarStoreMixin",
+    "ToolActionIconStoreMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

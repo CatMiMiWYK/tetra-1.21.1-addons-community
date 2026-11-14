@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.yiran.morerequirement.core.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "TetraModMixin",
+    "TransformationDeserializerMixin"
+  ],
+  "client": [
+    "ConfigSchematicMixin",
+    "ModuleRequirementMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

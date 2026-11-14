@@ -1,0 +1,28 @@
+{
+  "size": "medium",
+  "color": "#8cc7ff",
+  "waves": [
+    {
+      "entities": [
+        {
+          "entity": "minecraft:zombie",
+          "count": 1
+        }
+      ],
+      "max_wave_time": 1200,
+      "setup_time": 100
+    }
+  ],
+  "rewards": [],
+  "spawn_algorithm": "gateways:open_field",
+  "rules": {
+    "spacing": 8,
+    "leash_range": 32,
+    "allow_discarding": true,
+    "allow_dim_change": false,
+    "fail_on_out_of_bounds": false,
+    "remove_mobs_on_failure": true,
+    "default_drop_chance": 0,
+    "follow_range_boost": 32
+  }
+}

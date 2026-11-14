@@ -1,0 +1,44 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "LGPL 3.0"
+
+[[mods]]
+modId = "tetra_over_honing"
+version = "${version}"
+displayName = "TetraOverHoning"
+logoFile = "icon.png"
+authors = "_yi_ran_"
+description = '''
+Save extra honing.
+'''
+
+[[mixins]]
+config = "tetra_over_honing.mixins.json"
+
+[[dependencies.tetra_over_honing]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_over_honing]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_over_honing]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tetra_over_honing]]
+modId = "tetra_modify_core"
+type = "required"
+versionRange = "[6.9.0,)"
+ordering = "NONE"
+side = "BOTH"
