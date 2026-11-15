@@ -1,10 +1,11 @@
 # Tetra 1.21.1 / NeoForge 附属移植集（社区版 / Community Edition）
 
 > **许可与再分发提醒（重要）**
-> 本仓库包含 **All Rights Reserved（ARR）** 上游内容的衍生移植，包括但不限于 **VVAddon**
-> 与 **Tetra（第三方 tetra 1.21.1）**。相关内容**仅作学习与参考**，
-> **不得再分发、不得用于商业用途**，由其构建的 jar 同样不得公开分发。
-> 其余未确认许可证的附属默认同样按 ARR 处理。详见 [ATTRIBUTION.md](ATTRIBUTION.md)。
+> 本仓库包含 **All Rights Reserved（ARR）** 上游内容的衍生移植。
+> **VVAddon 因 ARR 未纳入本仓库**（源码与 jar 仅本地保留，不对外分发）；
+> Tetra（第三方 tetra 1.21.1）仅作为编译依赖引用，其源码与 jar 均不在本仓库中。
+> 其余未确认许可证的附属默认同样按 ARR 处理，**不得再分发、不得用于商业用途**。
+> 详见 [ATTRIBUTION.md](ATTRIBUTION.md)。
 
 
 本仓库是 **非官方社区版（Community Edition）**，收录将 1.20.1（Forge）Tetra 附属移植到
@@ -72,7 +73,7 @@ modid 与游戏内注册名保持不变，以兼容既有存档。
 | tetra_over_honing | tetra_over_honing | 6.9.0-1.0.1-fix | 已移植 | 扩展淬炼/强化上限 |
 | tetra_view | tetra_view | 6.9.0-1.0.2 | 已移植 | 工具信息/视图显示调整 |
 | universalscroll | universalscroll | 1.0.0 | 新增（自有） | 万能的卷轴 + 百宝卷轴（汇总全部图纸） |
-| vvaddon | vvaddon | 3.0.1 | 已移植 | 大量特性、改进与模块扩展 |
+| vvaddon | vvaddon | 3.0.1 | **因 ARR 未纳入** | VVAddon 移植（仅本地保留，不随本仓库分发） |
 
 用途简注依据移植笔记与 mod 名称整理，未逐项对照上游说明。
 
@@ -123,13 +124,12 @@ cd addons\<modid>
 | tetra_over_honing-1.21-1.21.1-6.9.0-1.0.1-fix.jar | 13,185 |
 | tetra_view-1.21-1.21.1-6.9.0-1.0.2.jar | 19,302 |
 | universalscroll-1.21-1.0.0.jar | 42,397 |
-| vvaddon-1.21-3.0.1.jar | 119,605 |
 
 `tetracelium` 与 `tetratic_combat_expanded` 的产物当前不在交付目录（需在各自工程重新构建或从原构建目录复制）。
 
 ## 已知限制
 
-- **vvaddon**：1.21.1 的 `AbstractArrow#setPierceLevel(byte)` 为 private，幻影箭原本的 64 穿透不可用（行为回退，已标注待评估）；`phantom_persuit` 效果仍未注册（原包即死代码）；5 个物品无配方。
+- **vvaddon（因 ARR 未纳入本仓库）**：1.21.1 的 `AbstractArrow#setPierceLevel(byte)` 为 private，幻影箭原本的 64 穿透不可用（行为回退，已标注待评估）；`phantom_persuit` 效果仍未注册（原包即死代码）；5 个物品无配方。
 - **tetrajs / tetra_data_kubejs**：因 KubeJS 2101 类型重复注册问题放弃，源码仅留档，不建议装入实例。
 - **tetratic_combat_expanded**：Better Combat 依赖锁在 `[2.0.4,2.1.0)`，无法与 BC 2.1.0+ 共存（逐实例武器属性 NBT 被上游移除）。
 - **geotetraarmor**：护甲耐久事件不再携带槽位信息（上游字段删除）。

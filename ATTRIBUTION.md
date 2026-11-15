@@ -14,7 +14,7 @@
 | 对象 | 说明 |
 |---|---|
 | **Tetra（第三方 tetra 1.21.1）** | 本仓库所有移植的目标 API 来源。该分支为 All Rights Reserved，本仓库**不包含**其源码或 jar；仅内部编译引用。 |
-| **VVAddon** | 上游：<https://github.com/VV-VittorioVeneto/VVAddon>（分支 `1.20.1`）。包内 `mods.toml` 声明 All Rights Reserved；仓库根 `LICENSE.txt` 只是 Forge MDK 模板，GitHub API 显示 `NOASSERTION`。**仅内部使用；对外分发/提 PR 需作者书面许可。** |
+| **VVAddon** | 上游：<https://github.com/VV-VittorioVeneto/VVAddon>（分支 `1.20.1`），All Rights Reserved。**因 ARR 未纳入本仓库**：源码与 jar 仅本地保留，不在本仓库提交、不对外分发。 |
 
 ## 3. 各 mod 来源与许可状态
 
@@ -41,7 +41,7 @@
 | tetra_over_honing | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
 | tetra_view | 反编译（CFR） | 无公开源码 | 未确认（默认 ARR） |
 | universalscroll | 本项目原创（基于 Tetra 公开 API） | 无上游 | 自有代码，随本仓库策略 |
-| vvaddon | GitHub 源码（分支 1.20.1） | <https://github.com/VV-VittorioVeneto/VVAddon> | **ARR，仅内部使用** |
+| vvaddon（未纳入） | GitHub 源码（分支 1.20.1） | <https://github.com/VV-VittorioVeneto/VVAddon> | **ARR，因许可未纳入本仓库** |
 
 “上游仓库未记录”表示本地没有保存可核验的仓库地址，不代表上游一定没有仓库；补全前不得对外分发。
 
