@@ -1,6 +1,6 @@
 # Tetra 1.21.1 / NeoForge 附属移植集（社区版 / Community Edition）
 
-> **第三方内容说明**
+> **非官方移植声明**：本仓库及 `unofficial-port/<工程名>/1.21.1` 各分支均为面向 Minecraft 1.21.1 / NeoForge 的**非官方移植**，与各上游作者无隶属关系。
 > 本仓库只包含各附属的移植源码与文档，不包含任何第三方 mod 的二进制文件。
 > tetra 1.21.1 为第三方授权受限内容，仅作编译依赖，不随本仓库分发。
 > 各工程的原作者与 jar `license` 字段原文见 [ATTRIBUTION.md](ATTRIBUTION.md)。
