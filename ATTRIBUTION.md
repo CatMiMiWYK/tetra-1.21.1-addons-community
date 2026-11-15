@@ -13,7 +13,7 @@
 
 | 对象 | 说明 |
 |---|---|
-| **Tetra（第三方 tetra 1.21.1）** | 本仓库所有移植的目标 API 来源。该分支为 All Rights Reserved，本仓库**不包含**其源码或 jar；仅内部编译引用。 |
+| **tetra 1.21.1（编译依赖）** | tetra 1.21.1 为第三方授权受限内容，仅作编译依赖，不随本仓库分发。 |
 | **VVAddon** | 上游：<https://github.com/VV-VittorioVeneto/VVAddon>（分支 `1.20.1`），All Rights Reserved。**因 ARR 未纳入本仓库**：源码与 jar 仅本地保留，不在本仓库提交、不对外分发。 |
 
 ## 3. 各 mod 来源与许可状态

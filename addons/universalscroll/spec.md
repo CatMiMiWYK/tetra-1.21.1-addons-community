@@ -1,7 +1,7 @@
 # 通用卷轴（Universal Scroll）附属 Mod — 规格说明
 
 工作目录：`D:\mod移植\2026-11-13\addons\universalscroll`
-源码依据：`D:\mod移植\2026-11-13\第三方 tetra 1.21.1`（与线上 `tetra-1.21.1-7.0.0.jar` 同源）
+源码依据：tetra 1.21.1 为第三方授权受限内容，仅作编译依赖，不随本仓库分发。
 目标版本：Minecraft 1.21.1 / NeoForge 21.1.266 / Tetra 7.0.0
 
 ## 1. 机制确认（已逐条对照源码，非推测）
