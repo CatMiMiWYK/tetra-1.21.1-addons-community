@@ -7,7 +7,7 @@
 | `gh` CLI | 已安装 2.104.0，但**未登录**（无法 fork / 创建 PR） |
 | `git` | 已安装 2.56.0.4 |
 | GitHub 登录 | `gh` 未登录；Web 与推送使用 Edge 登录态及 Git Credential Manager |
-| 上游仓库地址 | VVAddon 有可核验地址但**因 ARR 未纳入本仓库**；其余 mod 本地没有记录仓库 URL |
+| 上游仓库地址 | vvaddon 有可核验地址；yiran1457 名下 10 个工程已补录，其余本地没有记录仓库 URL |
 
 结论：**本轮不提交任何 PR**。`gh` 未登录，且多数 mod 缺少上游地址或只有反编译基准。
 
@@ -17,27 +17,27 @@
 
 | mod | 上游仓库 | 规划分支 | PR 链接 | 未提交原因 |
 |---|---|---|---|---|
-| vvaddon | https://github.com/VV-VittorioVeneto/VVAddon | — | 无 | **因 ARR 未纳入本仓库**（源码不在仓库内，不提交） |
+| vvaddon | https://github.com/VV-VittorioVeneto/VVAddon | — | 无 | 源码基准为上游 1.20.1 分支；本轮不提 PR |
 | art_of_forging | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
-| extraholopage | 本地未记录 | — | 无 | 同上 |
-| fluxoftetra | 无公开源码（反编译） | — | 无 | 无源码基准，按规则只记录不提交 |
-| geotetraarmor | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
-| morerequirement | 本地未记录 | — | 无 | 同上 |
-| simplejadetetra | 无公开仓库（反编译） | — | 无 | 无源码基准；且笔记记录为 ARR |
+| extraholopage | https://github.com/yiran1457/ExtraHoloPage | — | 无 | 上游地址已补录；本轮不提 PR |
+| fluxoftetra | https://github.com/yiran1457/FluxOfTetra | — | 无 | 上游地址已补录；本轮不提 PR |
+| geotetraarmor | https://github.com/yiran1457/GeoTetraArmor | — | 无 | 上游地址已补录；本轮不提 PR |
+| morerequirement | https://github.com/yiran1457/MoreRequirement | — | 无 | 上游地址已补录；本轮不提 PR |
+| simplejadetetra | 无公开仓库（反编译） | — | 无 | 无源码基准，只记录不提交 |
 | tetracelium | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
 | tetracompat | 本地未记录 | — | 无 | 同上 |
-| tetrajs | 本地未记录 | — | 无 | 已放弃；无源码基准 |
-| tetra_modify_core | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
+| tetrajs | https://github.com/yiran1457/Tetra-JS | — | 无 | 功能已放弃；本轮不提 PR |
+| tetra_modify_core | https://github.com/yiran1457/TetraModifyCore | — | 无 | 上游地址已补录；本轮不提 PR |
 | tetratic_combat_expanded | 本地未记录 | — | 无 | 同上 |
 | tetrawhetstone | 无公开源码（反编译） | — | 无 | 无源码基准 |
-| tetra_addition | 无公开源码（反编译） | — | 无 | 无源码基准 |
-| tetra_attribute_rebalancing | 无公开仓库（反编译） | — | 无 | 无源码基准；ARR |
+| tetra_addition | https://github.com/yiran1457/tetra_addition | — | 无 | 上游地址已补录；本轮不提 PR |
+| tetra_attribute_rebalancing | https://github.com/yiran1457/Tetra-Attribute-Rebalancing | — | 无 | 上游 LICENSE 为 GPL-3.0，jar 写 ARR；本轮不提 PR |
 | tetra_data_kubejs | 本地未记录 | — | 无 | 已放弃；无源码基准 |
 | tetra_gateways | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
-| tetra_inherit_enchant | 本地未记录 | — | 无 | 同上 |
-| tetra_material_overhaul | 无公开仓库（反编译） | — | 无 | 无源码基准；ARR |
-| tetra_over_honing | 本地未记录 | — | 无 | 源码基准为 jar + 反编译；上游地址缺失 |
-| tetra_view | 无公开源码（反编译） | — | 无 | 无源码基准 |
+| tetra_inherit_enchant | 待确认（TetraExtend-Enchant / TetraInherit-Improvement） | — | 无 | 上游候选不唯一；本轮不提 PR |
+| tetra_material_overhaul | https://github.com/yiran1457/Tetra-Material-Overhaul | — | 无 | 上游 LICENSE 为 LGPL-3.0；本轮不提 PR |
+| tetra_over_honing | https://github.com/yiran1457/TetraOverHoning | — | 无 | 上游地址已补录；本轮不提 PR |
+| tetra_view | https://github.com/yiran1457/Tetra-View | — | 无 | 上游地址已补录；本轮不提 PR |
 | universalscroll | 无（本项目原创） | — | 无 | 无上游仓库，不适用 PR |
 
 ## 3. 解除阻塞所需

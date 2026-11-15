@@ -1,51 +1,49 @@
-# 上游来源、许可证与排除清单
+# 上游来源与许可记录
 
-本仓库为**非官方社区版（Community Edition）**，只收录我们自己编写的移植代码与文档，不打包任何第三方 mod 的二进制文件。
+本仓库为**非官方社区版（Community Edition）**，只收录移植源码与文档，不打包任何第三方 mod 的二进制文件。
 
-## 1. 政策
+## 1. 记录原则
 
-- 仅内部使用：在取得各原作者明确许可前，不对外分发源码或构建产物。
-- 不收录：Tetra、mutil、KubeJS、暮色森林（Twilight Forest）、GeckoLib、Jade、Better Combat、Gateways、Placebo、Curios 等第三方 jar。
-- 不收录：`build/`、`.gradle/`、`libs/`、本地 maven 补件、日志、运行目录。
-- 每个 mod 的上游来源与许可证状态如下；**标注“未确认”的，默认按 All Rights Reserved 处理**。
+- 下表的 `license` 均为各工程 1.20.1 原始 jar 内 `META-INF/mods.toml` 的字段**原文**，逐字抄录，不做解释、不做删留判断。
+- `authors` 同为 jar 字段原文；上游使用模板未改的，保留模板占位（如 `YourNameHere`）。
+- “未记录上游仓库”表示本地没有保存可核验地址，不代表上游一定没有仓库。
+- 未列出的许可证文件、作者口头许可等，不在此表推断。
 
-## 2. ARR / 仅内部使用（重点）
+## 2. 第三方依赖（不随仓库分发）
 
 | 对象 | 说明 |
 |---|---|
-| **tetra 1.21.1（编译依赖）** | tetra 1.21.1 为第三方授权受限内容，仅作编译依赖，不随本仓库分发。 |
-| **VVAddon** | 上游：<https://github.com/VV-VittorioVeneto/VVAddon>（分支 `1.20.1`），All Rights Reserved。**因 ARR 未纳入本仓库**：源码与 jar 仅本地保留，不在本仓库提交、不对外分发。 |
+| tetra 1.21.1 | 第三方授权受限内容，仅作编译依赖，不随本仓库分发。 |
+| mutil 7.0.0 | tetra 必需前置，不随本仓库分发。 |
 
-## 3. 各 mod 来源与许可状态
+## 3. 各工程来源与许可字段
 
-| 目录 | 源基准 | 上游仓库 | 许可证状态 |
+| 工程 | authors（jar 原文） | 上游仓库 | license（jar 原文） |
 |---|---|---|---|
-| art_of_forging | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| extraholopage | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| fluxoftetra | 反编译 | 无公开源码 | 未确认（默认 ARR） |
-| geotetraarmor | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| morerequirement | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| simplejadetetra | 反编译（javap） | 无公开仓库 | ARR（笔记记录） |
-| tetracelium | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetracompat | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetrajs | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR）；已放弃 |
-| tetra_modify_core | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetratic_combat_expanded | 1.20.1 jar + 反编译 | 未记录（Better Combat 为独立上游依赖） | 未确认（默认 ARR） |
-| tetrawhetstone | 反编译 | 无公开源码 | 未确认（默认 ARR） |
-| tetra_addition | 反编译（CFR） | 无公开源码 | 未确认（默认 ARR） |
-| tetra_attribute_rebalancing | 反编译 | 无公开仓库 | ARR（笔记记录） |
-| tetra_data_kubejs | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR）；已放弃 |
-| tetra_gateways | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetra_inherit_enchant | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetra_material_overhaul | 反编译（CFR） | 无公开仓库 | ARR（笔记记录） |
-| tetra_over_honing | 1.20.1 jar + 反编译 | 未记录 | 未确认（默认 ARR） |
-| tetra_view | 反编译（CFR） | 无公开源码 | 未确认（默认 ARR） |
-| universalscroll | 本项目原创（基于 Tetra 公开 API） | 无上游 | 自有代码，随本仓库策略 |
-| vvaddon（未纳入） | GitHub 源码（分支 1.20.1） | <https://github.com/VV-VittorioVeneto/VVAddon> | **ARR，因许可未纳入本仓库** |
+| art_of_forging | `Acetheeldritchking, MindFaer` | 未记录 | `MIT` |
+| extraholopage | `_yi_ran_` | <https://github.com/yiran1457/ExtraHoloPage> | `GNU LGPL 3.0` |
+| fluxoftetra | `_yi_ran_` | <https://github.com/yiran1457/FluxOfTetra> | `APGL 3.0` |
+| geotetraarmor | `_yi_ran_` | <https://github.com/yiran1457/GeoTetraArmor> | `LGPL 3.0` |
+| morerequirement | `_yi_ran_` | <https://github.com/yiran1457/MoreRequirement> | `LGPL 3.0` |
+| simplejadetetra | `_yi_ran_` | 未找到 | `All Rights Reserved` |
+| tetracelium | `Mickelus` | 未找到 | `ARR` |
+| tetracompat | `SSWTLZZ` | 未记录 | `MIT` |
+| tetrajs | `_yi_ran_` | <https://github.com/yiran1457/Tetra-JS> | `LGPL 3.0` |
+| tetra_modify_core | `_yi_ran_` | <https://github.com/yiran1457/TetraModifyCore> | `All Rights Reserved` |
+| tetratic_combat_expanded | `Firelight Studios (BluSpring, Kiran), Smartin, Ace` | 未记录 | `MiT` |
+| tetrawhetstone | `hp` | 未找到 | `All Rights Reserved` |
+| tetra_addition | `_yi_ran_` | <https://github.com/yiran1457/tetra_addition> | `GPL-3.0-or-later` |
+| tetra_attribute_rebalancing | `YourNameHere, OtherNameHere` | <https://github.com/yiran1457/Tetra-Attribute-Rebalancing> | `All Rights Reserved` |
+| tetra_data_kubejs | （空） | 未找到 | `All Rights Reserved` |
+| tetra_gateways | `hp` | 未找到 | `All Rights Reserved` |
+| tetra_inherit_enchant | `_yi_ran_` | 待确认（候选：TetraExtend-Enchant / TetraInherit-Improvement） | `All Rights Reserved` |
+| tetra_material_overhaul | `_yi_ran_` | <https://github.com/yiran1457/Tetra-Material-Overhaul> | `LGPL 3.0` |
+| tetra_over_honing | `_yi_ran_` | <https://github.com/yiran1457/TetraOverHoning> | `LGPL 3.0` |
+| tetra_view | `_yi_ran_` | <https://github.com/yiran1457/Tetra-View> | `LGPL 3.0` |
+| universalscroll | 本项目 | 无上游 | 未声明 |
+| vvaddon | `Vittorio_Veneto` | <https://github.com/VV-VittorioVeneto/VVAddon> | `All Rights Reserved` |
 
-“上游仓库未记录”表示本地没有保存可核验的仓库地址，不代表上游一定没有仓库；补全前不得对外分发。
-
-## 4. 因许可/体积原因排除的文件
+## 4. 排除的文件
 
 - 所有 `libs/*.jar`：`tetra-1.21.1-7.0.0.jar`、`mutil-1.21.1-7.0.0.jar`、GeckoLib、Jade、KubeJS、Rhino、Curios、Gateways、Placebo、Better Combat 等。
 - 所有 `build/`、`.gradle/`、`run/`、`logs/`、`local-maven/`。

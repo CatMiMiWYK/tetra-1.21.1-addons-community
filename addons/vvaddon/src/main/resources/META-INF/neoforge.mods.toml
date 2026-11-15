@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "vvaddon"
+version = "${version}"
+displayName = "VVAddon"
+authors = "VV"
+description = '''
+VVAddon: Tetra improvement addon, ported to 1.21.1 NeoForge / Tetra 7.0.0
+'''
+
+[[dependencies.vvaddon]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vvaddon]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.vvaddon]]
+modId = "tetra"
+type = "required"
+versionRange = "[7.0.0,)"
+ordering = "NONE"
+side = "BOTH"

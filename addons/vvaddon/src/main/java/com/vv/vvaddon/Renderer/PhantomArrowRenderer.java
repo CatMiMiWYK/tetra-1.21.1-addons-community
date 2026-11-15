@@ -1,0 +1,27 @@
+package com.vv.vvaddon.Renderer;
+
+import com.vv.vvaddon.MainVVAddon;
+
+import net.minecraft.client.renderer.entity.ArrowRenderer;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+
+public class PhantomArrowRenderer extends ArrowRenderer<AbstractArrow>{
+    
+
+    // 1.21.1：new ResourceLocation(ns, path) 改为 ResourceLocation.fromNamespaceAndPath
+    public static final ResourceLocation TEXTURE = ResourceLocation.fromNamespaceAndPath(MainVVAddon.MODID,"textures/entity/phantom_arrow.png");
+
+    public PhantomArrowRenderer(EntityRendererProvider.Context ctx) {
+
+        super(ctx);
+    }
+
+    @Override
+    public ResourceLocation getTextureLocation(AbstractArrow entity) {
+
+        return TEXTURE;
+    }
+
+}
